@@ -6,7 +6,7 @@ yt-dlp や ffmpeg などのセットアップは各自で調べて済ませて�
 
 ## sh ファイル
 
-yt-dlp-wav.sh では [zenity](https://help.gnome.org/users/zenity/stable/index.html.ja) のインストールが必要です。`sudo apt install zenity` や `sudo pacman -S zenity` などでインストールしてください（インストール方法はパッケージマネージャによって異なります）  
+yt-wav.sh では [zenity](https://help.gnome.org/users/zenity/stable/index.html.ja) のインストールが必要です。`sudo apt install zenity` や `sudo pacman -S zenity` などでインストールしてください（インストール方法はパッケージマネージャによって異なります）  
 sh ファイルには実行権限を与えてください
 
 ## 免責
