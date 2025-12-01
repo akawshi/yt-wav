@@ -1,6 +1,6 @@
 ## 何これ
 
-[yt-dlp](https://github.com/yt-dlp/yt-dlp) で wav ファイルを作成するプログラムです。ダブルクリックで動作します  
+[yt-dlp](https://github.com/yt-dlp/yt-dlp) で wav ファイルを作成するスクリプトです。ダブルクリックで動作します  
 Linux 向けで Windows では動作を想定していません。また, 確認ダイアログに zenity を使用しています  
 yt-dlp や ffmpeg などのセットアップは各自で調べて済ませておいてください  
 
