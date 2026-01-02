@@ -53,10 +53,10 @@ fi
 # メタデータ取得
 META_JSON=$(yt-dlp --dump-single-json "$URL")
 
-VIDEO_ID=$(echo "$META_JSON" | sed -n 's/.*"id":"\([^"]*\)".*/\1/p')
-TITLE=$(echo "$META_JSON" | sed -n 's/.*"title":"\([^"]*\)".*/\1/p')
-AUTHOR=$(echo "$META_JSON" | sed -n 's/.*"uploader":"\([^"]*\)".*/\1/p')
-DURATION=$(echo "$META_JSON" | sed -n 's/.*"duration":\([0-9]*\).*/\1/p')
+VIDEO_ID=$(yt-dlp --print "%(id)s" "$URL")
+TITLE=$(yt-dlp --print "%(title)s" "$URL")
+AUTHOR=$(yt-dlp --print "%(uploader)s" "$URL")
+DURATION=$(yt-dlp --print "%(duration)s" "$URL")
 
 JSON_PATH="${OUTPUT_DIR}/cinema-video.json"
 
